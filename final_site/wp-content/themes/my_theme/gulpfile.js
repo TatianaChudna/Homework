@@ -1,19 +1,5 @@
-var gulp = require ('gulp');
-var sass = require ('gulp-sass');
 
-gulp.task('sass', async function () {
-gulp.src('./sass/**/*.scss')
-.pipe(sass().on('error', sass.logError))
-.pipe(gulp.dest('./sass'));
-});
-
-gulp.task('sass:watch', async function () {
-gulp.watch ('./sass/**/*.scss', gulp.series('sass'));
-});
-
-
-
-'use strict'
+'use strict';
 
 var gulp = require('gulp'),
     scss = require('gulp-sass'),
@@ -25,31 +11,33 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     decomment = require('gulp-decomment'),
     rename = require('gulp-rename'),
+    imagemin = require('gulp-imagemin'),
+    jquery = require("jquery"),
     mode = require('gulp-mode')({
         modes: ['production', 'development'],
         default: 'development',
         verbose: false
     });
 
-var SASS_INCLUDE_PATHS = [
-    './node_modules/bootstrap/scss/',
-    './node_modules/multiple-select/'
-]
 var LIB_JS_INCLUDE_PATHS = [
-    './node_modules/bootstrap/dist/js/bootstrap.min.js',
-    './node_modules/multiple-select/multiple-select.js',
-    './node_modules/jquery-validation/dist/jquery.validate.min.js'
-]
+    './node_modules/jquery/dist/jquery.js',
+];
 
 var CUSTOM_JS_SOURCE = [
     './source-js/main.js',
-    './source-js/industry-onaddnew-scroll.js'
-]
+];
 
 function handleError (err) {
-    console.log(err.toString())
+    console.log(err.toString());
     this.emit('end')
 }
+//
+//
+// gulp.task('sass:watch', async function () {
+//     gulp.watch ('./sass/**/*.scss', gulp.series('sass'));
+// });
+//
+
 
 gulp.task('lib-js', function () {
     return gulp.src(LIB_JS_INCLUDE_PATHS)
@@ -59,25 +47,20 @@ gulp.task('lib-js', function () {
         .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(mode.development(sourcemaps.write()))
-        .pipe(gulp.dest('./js'))
-})
+        .pipe(gulp.dest('./assets/js'))
+});
 
 gulp.task('styles', function () {
-    return gulp.src('./scss/main.scss')
+    return gulp.src('./sass/style.scss')
         .pipe(plumber({errorHandler: handleError}))
         .pipe(mode.development(sourcemaps.init()))
-        .pipe(scss({outputStyle: 'compressed', includePaths: SASS_INCLUDE_PATHS}))
         .pipe(autoprefixer({browsers: ['last 2 versions', 'safari 8', 'ie 11', 'opera 12.1', 'ios 6', 'android 4']}))
         .pipe(mode.development(sourcemaps.write()))
         .pipe(rename({
             extname: '.min.css'
         }))
-        .pipe(mode.production(decomment.text({
-            ignore: /url\([\w\s:\/=\-\+;,]*\)/g,
-            trim: true
-        })))
-        .pipe(gulp.dest('./css/'))
-})
+        .pipe(gulp.dest('./assets/css/'))
+});
 
 gulp.task('scripts', function () {
     return gulp.src(CUSTOM_JS_SOURCE)
@@ -87,12 +70,27 @@ gulp.task('scripts', function () {
         .pipe(babel({compact: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(mode.development(sourcemaps.write()))
-        .pipe(gulp.dest('./js/'))
-})
+        .pipe(gulp.dest('./assets/js/'))
+});
 
-gulp.task('watch', ['styles', 'scripts'], function () {
-    gulp.watch('./scss/**/*.scss', ['styles'])
-    gulp.watch('./source-js/main.js', ['scripts'])
-})
+gulp.task('images', async function () {
+    gulp.src('./images/**/*')
+        .pipe(plumber({errorHandler: handleError }))
+        .pipe(imagemin())
+        .pipe(gulp.dest('./assets/images'))
+});
 
-gulp.task('default', ['lib-js', 'styles', 'scripts'], function () {})
+gulp.task('watch', async function () {
+    gulp.watch('./sass/**/*.scss', gulp.series('styles'))
+    gulp.watch('./source-js/main.js', gulp.series('scripts'))
+});
+
+gulp.task('default', function (done) {
+    return gulp.series(
+        'lib-js', 'styles', 'scripts', 'images'
+    )(done)
+});
+
+
+
+
