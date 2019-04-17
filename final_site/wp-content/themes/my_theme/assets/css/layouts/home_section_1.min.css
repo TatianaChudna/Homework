@@ -1,0 +1,7 @@
+.home-section-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.5)), to(rgba(20, 20, 20, 0.5))), url("<?php the_field('image'); ?>"), no-repeat 0% 80%;
+  background: -webkit-linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("<?php the_field('image'); ?>"), no-repeat 0% 80%;
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url("<?php the_field('image'); ?>"), no-repeat 0% 80%;
+  background-size: cover; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxheW91dHMvaG9tZV9zZWN0aW9uXzEuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLDBLQUlnQjtFQUpoQix3SUFJZ0I7RUFKaEIsZ0lBSWdCO0VBSWhCLHNCQUFzQixFQUFBIiwiZmlsZSI6ImxheW91dHMvaG9tZV9zZWN0aW9uXzEuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhvbWUtc2VjdGlvbi0xIHtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KFxuICAgICAgICAgICAgICAgICAgcmdiYSgyMCwyMCwyMCwgLjUpLFxuICAgICAgICAgICAgICAgICAgcmdiYSgyMCwyMCwyMCwgLjUpKSxcbiAgdXJsKFwiPD9waHAgdGhlX2ZpZWxkKCdpbWFnZScpOyA/PlwiKSxcbiAgbm8tcmVwZWF0IDAlIDgwJTtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAtbW96LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIC1vLWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59Il19 */

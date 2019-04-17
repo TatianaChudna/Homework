@@ -2,7 +2,7 @@
 'use strict';
 
 var gulp = require('gulp'),
-    scss = require('gulp-sass'),
+    sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     babel = require('gulp-babel'),
     uglify = require('gulp-uglify'),
@@ -31,12 +31,12 @@ function handleError (err) {
     console.log(err.toString());
     this.emit('end')
 }
-//
+
 //
 // gulp.task('sass:watch', async function () {
 //     gulp.watch ('./sass/**/*.scss', gulp.series('sass'));
 // });
-//
+
 
 
 gulp.task('lib-js', function () {
@@ -50,10 +50,11 @@ gulp.task('lib-js', function () {
         .pipe(gulp.dest('./assets/js'))
 });
 
-gulp.task('styles', function () {
-    return gulp.src('./sass/style.scss')
+gulp.task('sass', function () {
+    return gulp.src('./sass/**/*.scss')
         .pipe(plumber({errorHandler: handleError}))
         .pipe(mode.development(sourcemaps.init()))
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 2 versions', 'safari 8', 'ie 11', 'opera 12.1', 'ios 6', 'android 4']}))
         .pipe(mode.development(sourcemaps.write()))
         .pipe(rename({
@@ -81,13 +82,13 @@ gulp.task('images', async function () {
 });
 
 gulp.task('watch', async function () {
-    gulp.watch('./sass/**/*.scss', gulp.series('styles'))
+    gulp.watch('./sass/**/*.scss', gulp.series('sass'))
     gulp.watch('./source-js/main.js', gulp.series('scripts'))
 });
 
 gulp.task('default', function (done) {
     return gulp.series(
-        'lib-js', 'styles', 'scripts', 'images'
+        'lib-js', 'sass', 'scripts', 'images'
     )(done)
 });
 
