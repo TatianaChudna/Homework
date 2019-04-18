@@ -1,21 +1,18 @@
 <?php
-/* Template name: Home_section_3
+/**
+ * Template name: Home_section_3
 */
 ?>
 <?php $image = get_field('image'); ?>
-<?php $size = 'large'; ?> // (thumbnail, medium, large, full or custom size)
+<?php $size = 'large'; ?>
 
 <section class="home-section-3">
     <div class="container">
-        <div>
-            <?php if (!empty(get_sub_field('title'))): ?>
-                <h1 class="text">
-                    <?php the_field('title'); ?>
-                </h1>
-            <?php endif; ?>
-        </div>
+      <h1>
+        <?php the_sub_field('title'); ?>
+      </h1>
         <p>
-            <?php the_field('description'); ?>
+            <?php the_sub_field('description'); ?>
         </p>
         <?php
 

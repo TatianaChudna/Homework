@@ -1,7 +1,6 @@
 <?php
 /**
  * Template name: Home_section_1
- * Template Post Type: page, post
  */
 ?>
 <?php $link = get_sub_field('link'); ?>
@@ -21,15 +20,11 @@
       endif;
       ?>
 
-    <div>
-        <?php if (!empty(get_sub_field('title'))): ?>
-          <h1 class="text">
-              <?php the_field('title'); ?>
-          </h1>
-        <?php endif; ?>
-    </div>
+    <h1>
+        <?php the_sub_field('title'); ?>
+    </h1>
     <p>
-        <?php the_field('description'); ?>
+        <?php the_sub_field('description'); ?>
     </p>
     <a href="<?php echo $link['url'] ?>" target="<?php echo $link['target'] ?>"><?php echo $link['title'] ?></a>
   </div>
