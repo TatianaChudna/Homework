@@ -7,7 +7,6 @@
 <?php $link1 = get_sub_field('link1'); ?>
 <?php $link2 = get_sub_field('link2'); ?>
 <?php $image = get_sub_field('image'); ?>
-<?php $size = 'large'; ?>
 
 <section class="home-section-7">
   <div class="container">

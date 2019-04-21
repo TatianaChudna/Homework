@@ -3,22 +3,25 @@
  * Template name: Home_section_3
 */
 ?>
-<?php $image = get_field('image'); ?>
-<?php $size = 'large'; ?>
+<?php $image = get_sub_field('image'); ?>
 
 <section class="home-section-3">
     <div class="container">
-      <h1>
-          <?php the_sub_field('title'); ?>
-      </h1>
-      <p>
-          <?php the_sub_field('description'); ?>
-      </p>
+      <div>
+        <h1>
+            <?php the_sub_field('title'); ?>
+        </h1>
+        <p>
+            <?php the_sub_field('description'); ?>
+        </p>
+      </div>
+
         <?php
 
         if ($image): { ?>
           <div>
-              <?php echo wp_get_attachment_image($image, $size); ?>
+            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"
+                 title="<?php echo $image['title'] ?> "/>
           </div>
             <?php
         }

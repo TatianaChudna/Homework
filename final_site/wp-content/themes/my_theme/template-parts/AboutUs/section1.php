@@ -1,19 +1,30 @@
 <?php
 /**
- * Template name: Home_section_8
+ * Template name: section1
  */
 ?>
-<?php $image = get_sub_field('image'); ?>
 
-<section class="home-section-8">
+<section class="section1">
   <div class="container">
+      <?php $image = get_sub_field('image'); ?>
+      <?php $link = get_sub_field('link'); ?>
+
     <div>
       <h1>
           <?php the_sub_field('title'); ?>
       </h1>
+    </div>
+    <div>
+      <p>
+          <?php the_sub_field('subtitle'); ?>
+      </p>
       <p>
           <?php the_sub_field('description'); ?>
       </p>
+    </div>
+
+    <div>
+      <a href="<?php echo $link['url'] ?>" target="<?php echo $link['target'] ?>"><?php echo $link['title'] ?></a>
     </div>
 
       <?php
@@ -27,6 +38,5 @@
       }
       endif;
       ?>
-
   </div>
 </section>

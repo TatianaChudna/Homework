@@ -26,13 +26,15 @@
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"
                    title="<?php echo $image['title'] ?> "/>
             </li>
-            </ul>
-            <h2>
-                <?php echo get_sub_field('subtitle'); ?>
-            </h2>
-            <p>
-                <?php echo get_sub_field('description'); ?>
-            </p>
+          </ul>
+            <div>
+              <h2>
+                  <?php echo get_sub_field('subtitle'); ?>
+              </h2>
+              <p>
+                  <?php echo get_sub_field('description'); ?>
+              </p>
+            </div>
 
             <?php endwhile; ?>
 
