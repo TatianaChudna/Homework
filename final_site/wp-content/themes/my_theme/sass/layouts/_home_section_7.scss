@@ -1,0 +1,25 @@
+.home-section-7 {
+  background: #f2f2f2;
+}
+
+.section7-content {
+  color: $color-text;
+  margin-top: 36px;
+  margin-bottom: 54px;
+  @include flex;
+  ul {
+    list-style-type: none;
+  }
+  h1 {
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
+    font-weight: 300;
+    letter-spacing: -0.76px;
+  }
+  p {
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    letter-spacing: -0.38px;
+  }
+}
