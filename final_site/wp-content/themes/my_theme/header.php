@@ -17,8 +17,8 @@
     </div>
     <div class="header-menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="http://final_site.test/home/" class="active">Home</a></li>
+            <li><a href="http://final_site.test/about-us/" target="_blank">About Us</a></li>
             <li><a href="#">FAQ</a></li>
         </ul>
     </div>

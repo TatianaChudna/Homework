@@ -12,7 +12,6 @@ var gulp = require('gulp'),
     decomment = require('gulp-decomment'),
     rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
-    jquery = require("jquery"),
     mode = require('gulp-mode')({
         modes: ['production', 'development'],
         default: 'development',
@@ -31,13 +30,6 @@ function handleError (err) {
     console.log(err.toString());
     this.emit('end')
 }
-
-//
-// gulp.task('sass:watch', async function () {
-//     gulp.watch ('./sass/**/*.scss', gulp.series('sass'));
-// });
-
-
 
 gulp.task('lib-js', function () {
     return gulp.src(LIB_JS_INCLUDE_PATHS)

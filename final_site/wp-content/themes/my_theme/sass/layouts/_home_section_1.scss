@@ -1,0 +1,26 @@
+.home-section-1 {
+  background: #3b9743;
+  overflow: hidden;
+}
+
+.section1-content {
+  max-width: 664px;
+  color: $main-color-text;
+  margin-right: 89px;
+  float: right;
+  text-align: right;
+  h1 {
+    font-size: $font-size-lg;
+    letter-spacing: -0.76px;
+    font-family: $secondary-font;
+    margin-bottom: 27px;
+  }
+  p {
+    font-size: $font-size-md;
+    letter-spacing: -0.27px;
+    font-family: $main-font;
+    margin-bottom: 59px;
+    margin-left: 100px;
+    text-align: right;
+  }
+}

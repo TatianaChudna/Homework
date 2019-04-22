@@ -1,5 +1,13 @@
-
-
-@mixin font-color () {
-  color: $color;
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+//Flex
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+

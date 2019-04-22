@@ -1,9 +1,25 @@
 
-/* Colors */
+// Backgrounds
+$background-body: #fff;
+$background-button: #00a4e4;
+$background-button-hover: #1655cb;
 
-$primary-color: #fff;
-$color: #fff;
-$color: #000;
+// Text
+$main-color-text: #fff;
+$color-text: #000;
+$header-color: #8c8c8c;
+$header-color-hover:#00a4e4;
+
+// Links
+$color-link: #fff;
+$color-link-visited: #0073aa;
+//$color-link-hover: darken( $color__link, 10% );
+
+//Letter-spacing
+$letter-spacing: 0.3px;
+
+//Container
+$container: 1140px;
 
 
 

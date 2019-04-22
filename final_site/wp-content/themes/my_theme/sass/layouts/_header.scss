@@ -1,0 +1,45 @@
+
+.header-section {
+  @include flex;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+
+.header-logo {
+  margin-left: 41px;
+}
+
+.header-menu {
+  margin-right: 58px;
+  font-family: $main-font;
+  font-size: 15px;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding-right: 26px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $header-color;
+    font-weight: 600;
+    letter-spacing: $letter-spacing;
+
+    &:hover {
+      color: $header-color-hover;
+      cursor: pointer;
+    }
+  }
+  .active:active {
+    color: $header-color-hover;
+  }
+}
+
+
+
+
+
