@@ -7,14 +7,10 @@
   <div class="container">
       <?php $link = get_sub_field('link'); ?>
 
-    <div class="text-wrapper">
-      <p>
+    <div class="section2-content">
           <?php the_sub_field('description'); ?>
-      </p>
-    </div>
 
-    <div>
-      <a href="<?php echo $link['url'] ?>" target="<?php echo $link['target'] ?>"><?php echo $link['title'] ?></a>
+      <a class="button" href="<?php echo $link['url'] ?>" target="<?php echo $link['target'] ?>"><?php echo $link['title'] ?></a>
     </div>
 
   </div>

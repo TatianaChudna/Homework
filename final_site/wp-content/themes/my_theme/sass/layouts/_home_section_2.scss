@@ -1,9 +1,18 @@
 
 .home-section-2 {
   background: #294b09;
-  height: 210px;
-  .text-wrapper {
+  @include flex;
 
+  .section2-content {
+    font-family: $main-font;
+    font-size: $font-size-md;
+    font-weight: 500;
+    color: #cbe4b3;
+    letter-spacing: -0.28px;
+    margin-top: 43px;
+    margin-bottom: 46px;
+  }
+  span {
+    color: $main-color-text;
   }
 }
-
