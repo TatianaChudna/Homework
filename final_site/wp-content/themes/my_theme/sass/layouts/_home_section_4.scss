@@ -1,0 +1,48 @@
+
+.section4-title {
+  text-align: center;
+  color: $color-text;
+  font-family: $secondary-font;
+  font-size: $font-size-lg;
+  font-weight: 300;
+  letter-spacing: -0.76px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+
+.gallery-images {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.slide {
+  color: $color-text;
+  text-align: center;
+  font-family: $main-font;
+  font-size: $font-size-sm;
+  font-weight: 600;
+  img {
+    position: relative;
+  }
+  &:hover {
+    filter: grayscale(0.9);
+  }
+  h2 {
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  p {
+    letter-spacing: -0.19px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+

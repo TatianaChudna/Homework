@@ -5,13 +5,11 @@
 ?>
 
 <section class="home-section-4">
-  <div class="container">
 
-    <h1>
+    <h1 class="section4-title">
         <?php the_sub_field('title'); ?>
     </h1>
 
-    <div>
         <?php if (have_rows('gallery_images')): ?>
 
           <ul class="gallery-images">
@@ -25,19 +23,17 @@
             <li class="slide">
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"
                    title="<?php echo $image['title'] ?> "/>
-            </li>
-          </ul>
-            <div>
-              <h2>
+              <h2 class="section4-subtitle">
                   <?php echo get_sub_field('subtitle'); ?>
               </h2>
-              <p>
+              <p class="section4-content">
                   <?php echo get_sub_field('description'); ?>
               </p>
-            </div>
+            </li>
 
             <?php endwhile; ?>
 
         <?php endif; ?>
-    </div>
+          </ul>
+
 </section>
