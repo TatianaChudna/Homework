@@ -7,7 +7,7 @@
 
 <section class="home-section-3">
     <div class="container">
-      <div>
+      <div class="section3-content">
         <h1>
             <?php the_sub_field('title'); ?>
         </h1>

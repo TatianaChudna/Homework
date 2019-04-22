@@ -1,0 +1,21 @@
+.home-section-3 {
+  background: #488122;
+  @include flex;
+}
+
+.section3-content {
+  color: $main-color-text;
+  margin-top: 36px;
+  h1 {
+    font-size: $font-size-lg;
+    font-family: $secondary-font;
+    letter-spacing: -0.76px;
+    font-weight: 300;
+  }
+  p {
+    font-family: $main-font;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    letter-spacing: -0.19px;
+  }
+}
