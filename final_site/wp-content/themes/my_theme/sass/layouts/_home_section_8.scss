@@ -1,14 +1,15 @@
 .home-section-8 {
   background: #65aa19;
-  @include flex;
   padding-top: 33px;
   padding-bottom: 51px;
 
-  overflow: hidden;
+  .d-flex {
+    @include flex;
+    justify-content: center;
+  }
 
   .section8-content {
     color: $main-color-text;
-    float: left;
     max-width: 449px;
     margin-right: 81px;
 
@@ -32,10 +33,6 @@
       text-decoration: none;
       color: #0033cc;
     }
-  }
-
-  .img-container {
-    float: right;
   }
 }
 

@@ -2,11 +2,13 @@
   background: #488122;
   padding-top: 36px;
   padding-bottom: 54px;
+  .d-flex {
+   @include flex;
+  }
 
   .section3-content {
     color: $main-color-text;
     max-width: 580px;
-    float: left;
     margin-right: 100px;
     h1 {
       font-size: $font-size-lg;
@@ -23,8 +25,5 @@
       letter-spacing: -0.19px;
       line-height: 40px;
     }
-  }
-  .illustration {
-    float: right;
   }
 }
