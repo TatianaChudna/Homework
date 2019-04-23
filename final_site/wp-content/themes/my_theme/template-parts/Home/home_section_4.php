@@ -31,10 +31,6 @@
                     <?php echo get_sub_field('description'); ?>
                 </p>
               </div>
-
-              <div class="layer">
-
-              </div>
             </li>
 
             <?php endwhile; ?>

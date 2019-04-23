@@ -32,7 +32,7 @@
         </p>
       </div>
       <ul>
-        <li><a class="button" href="<?php echo $link1['url'] ?>"> <?php echo $link1['title'] ?></a></li>
+        <li class="link"><a class="button" href="<?php echo $link1['url'] ?>"> <?php echo $link1['title'] ?></a></li>
         <li><a class="button" href="<?php echo $link2['url'] ?>"> <?php echo $link2['title'] ?></a></li>
       </ul>
     </div>
