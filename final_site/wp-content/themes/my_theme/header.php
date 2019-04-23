@@ -13,14 +13,13 @@
 <body>
 <header class="header-section">
     <div class="header-logo">
+      <a href="/">
         <img src="<?php echo get_template_directory_uri() . '/assets/images/Logo.png' ?>" alt="logo">
+      </a>
     </div>
     <div class="header-menu">
-        <ul>
-            <li><a href="http://final_site.test/home/" class="active">Home</a></li>
-            <li><a href="http://final_site.test/about-us/" target="_blank">About Us</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
+        <?php wp_nav_menu([
+            'menu' => 'Primary Menu'
+        ]); ?>
     </div>
 </header>
-</body>

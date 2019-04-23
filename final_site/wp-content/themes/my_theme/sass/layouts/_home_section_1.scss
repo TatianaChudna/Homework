@@ -1,29 +1,31 @@
 .home-section-1 {
-  background: #3b9743;
   overflow: hidden;
+  background-size: cover!important;
+  height: 815px;
+
+  .section1-content {
+    max-width: 669px;
+    color: $main-color-text;
+    margin-right: 89px;
+    margin-left: auto;
+    margin-top: 37px;
+    font-weight: 300;
+    text-align: right;
+    h1 {
+      font-size: $font-size-lg;
+      letter-spacing: -0.76px;
+      font-family: $secondary-font;
+      margin-bottom: 27px;
+    }
+    p {
+      font-size: $font-size-md;
+      letter-spacing: -0.27px;
+      font-family: $main-font;
+      line-height: 40px;
+      margin-bottom: 59px;
+      margin-left: 100px;
+    }
+  }
 }
 
-.section1-content {
-  max-width: 669px;
-  color: $main-color-text;
-  margin-right: 89px;
-  margin-top: 37px;
-  float: right;
-  text-align: right;
-  h1 {
-    font-size: $font-size-lg;
-    letter-spacing: -0.76px;
-    font-family: $secondary-font;
-    font-weight: 300;
-    margin-bottom: 27px;
-  }
-  p {
-    font-size: $font-size-md;
-    letter-spacing: -0.27px;
-    font-family: $main-font;
-    font-weight: 400;
-    margin-bottom: 59px;
-    margin-left: 100px;
-    text-align: right;
-  }
-}
+

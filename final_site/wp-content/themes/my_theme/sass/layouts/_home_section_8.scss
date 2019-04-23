@@ -1,0 +1,20 @@
+.home-section-8 {
+  background: #65aa19;
+  @include flex;
+}
+
+.section8-content {
+  color: $main-color-text;
+  h1 {
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
+    font-weight: 300;
+    letter-spacing: -0.76px;
+  }
+  p {
+    font-family: $main-color-text;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    letter-spacing: -0.38px;
+  }
+}

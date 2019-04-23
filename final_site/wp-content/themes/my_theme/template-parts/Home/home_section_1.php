@@ -7,21 +7,7 @@
 <?php $bg_image = get_sub_field('image'); ?>
 <?php $size = get_sub_field('full'); ?>
 
-<section class="home-section-1">
-
-<!--      --><?php
-//      if (!empty($bg_image)): { ?>
-<!--        <div class="bg_image">-->
-<!--            --><?php //echo wp_get_attachment_image($bg_image, $size); ?>
-<!--        </div>-->
-<!--          --><?php
-//      }
-//      endif;
-//      ?>
-
-<div class="bg-image">
-
-</div>
+<section class="home-section-1" style="background: url('<?php echo get_sub_field('image'); ?>') no-repeat;">
     <div class="section1-content">
       <h1>
           <?php the_sub_field('title'); ?>

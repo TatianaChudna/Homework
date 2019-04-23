@@ -1,16 +1,21 @@
 
 .home-section-2 {
   background: #294b09;
+  padding-top: 43px;
+  padding-bottom: 45px;
 }
 
 .section2-content {
+  @include flex;
   font-family: $main-font;
   font-size: $font-size-md;
   font-weight: 500;
   color: #cbe4b3;
   letter-spacing: -0.28px;
+  align-items: center;
   p {
     max-width: 814px;
+    line-height: 45px;
   }
   span {
     color: $main-color-text;

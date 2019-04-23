@@ -4,20 +4,15 @@
   color: $main-color-text;
   text-transform: uppercase;
   text-decoration: none;
-  vertical-align: bottom;
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
-  line-height: 35px;
   letter-spacing: 0.6px;
   padding: 15px;
+  display: inline-block;
+  height: 17px;
 
   &:hover {
     background: $background-button-hover;
     cursor: pointer;
-  }
-
-  &:visited {
-    color: $background-body;
-    text-decoration: none;
   }
 }

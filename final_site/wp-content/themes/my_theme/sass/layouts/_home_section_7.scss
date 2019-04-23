@@ -4,8 +4,6 @@
 
 .section7-content {
   color: $color-text;
-  margin-top: 36px;
-  margin-bottom: 54px;
   @include flex;
   ul {
     list-style-type: none;
