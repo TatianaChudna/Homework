@@ -1,0 +1,37 @@
+.home-section-9 {
+  background: #d7d7d6;
+  padding-top: 37px;
+  padding-bottom: 53px;
+
+  .d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .section9-content {
+    color: $color-text;
+    font-weight: 300;
+    max-width: 518px;
+
+    h1 {
+      font-family: $secondary-font;
+      font-size: $font-size-lg;
+      line-height: 42px;
+      letter-spacing: -0.76px;
+      margin-bottom: 36px;
+    }
+    p {
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      line-height: 34px;
+      letter-spacing: -0.38px;
+    }
+  }
+}
+
