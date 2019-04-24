@@ -1,2 +1,83 @@
+.footer-container {
+  background: #f2f2f2;
+  font-family: $main-font;
+  padding-top: 18px;
+  padding-bottom: 28px;
+  .footer-block {
+    @include flex;
+    align-items: normal;
+    text-align: left;
+    font-size: 15px;
+
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $header-color;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      display: inline-block;
+
+      &:hover {
+        color: $header-color-hover;
+        cursor: pointer;
+      }
+    }
+  }
+  h5 {
+    color: $color-text;
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 27px;
+    margin-bottom: 19px;
+  }
+  .first-form {
+    margin-bottom: 10px;
+    font-family: $main-font;
+    .email {
+      border: none;
+      background-color: #fff;
+      color: #a8a8a8;
+      font-size: 14px;
+      letter-spacing: 0.56px;
+      padding: 16px 0 15px 24px;
+      width: 516px;
+    }
+    .button {
+      margin-left: -4px;
+      width: 98px;
+    }
+  }
+  .second-form {
+    margin-bottom: 84px;
+    label {
+      color: #b3b3b3;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    #color-blue {
+      color: #647ad8;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+  }
+  #social-network {
+    .menu-item {
+      display: inline-block;
+      margin-right: 17px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
 
 
