@@ -48,6 +48,7 @@
           </div>
         </div>
         <div id="dashboard">
+          <div class="cart-img">
             <?php
 
             if ($image2): { ?>
@@ -59,11 +60,13 @@
             }
             endif;
             ?>
+          </div>
         </div>
         <div class="cart-content">
             <?php the_sub_field('description2'); ?>
         </div>
         <div id="reporting">
+          <div class="cart-img">
             <?php
 
             if ($image3): { ?>
@@ -75,12 +78,14 @@
             }
             endif;
             ?>
+          </div>
         </div>
         <div class="cart-content">
             <?php the_sub_field('description3'); ?>
         </div>
 
         <div id="future">
+          <div class="cart-img">
             <?php
 
             if ($image4): { ?>
@@ -91,6 +96,7 @@
             }
             endif;
             ?>
+          </div>
         </div>
         <div class="cart-content">
             <?php the_sub_field('description4'); ?>

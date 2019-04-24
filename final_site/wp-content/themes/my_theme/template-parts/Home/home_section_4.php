@@ -27,11 +27,11 @@
 
               <div class="text-container">
 
-                <h2 class="section4-subtitle">
+                <h2>
                     <?php echo get_sub_field('subtitle'); ?>
                 </h2>
 
-                <p class="section4-content">
+                <p>
                     <?php echo get_sub_field('description'); ?>
                 </p>
 
