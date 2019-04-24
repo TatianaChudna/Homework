@@ -1,0 +1,49 @@
+.section3 {
+  padding-top: 27px;
+  padding-bottom: 54px;
+  color: $color-text;
+  h1 {
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: -0.76px;
+    margin-bottom: 46px;
+    text-align: center;
+  }
+  .d-flex {
+    @include flex;
+    font-family: $main-font;
+    .content-block {
+      max-width: 269px;
+      text-align: center;
+    }
+    h2 {
+      font-size: $font-size-md;
+      font-weight: 500;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 34px;
+    }
+    .value {
+      color: #51b4bd;
+      font-size: 77px;
+      font-weight: 500;
+      line-height: 35px;
+      letter-spacing: -1.54px;
+      margin-bottom: 36px;
+      text-align: center;
+    }
+    .title2 {
+      margin-bottom: 44px;
+    }
+    p {
+      color: #505050;
+      font-size: $font-size-xs;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: left;
+    }
+  }
+}

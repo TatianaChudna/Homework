@@ -7,35 +7,33 @@
 <section class="section3">
   <div class="container">
 
-    <div>
       <h1>
           <?php the_sub_field('title'); ?>
       </h1>
-    </div>
 
-    <div>
+    <div class="">
         <?php if (have_rows('content')): ?>
 
-      <ul class="calculator">
+      <ul class="calculator d-flex">
 
           <?php while (have_rows('content')): the_row();
 
-              $image = get_sub_field('image');
               $title1 = get_sub_field('title1');
+              $value = get_sub_field('value');
               $title2 = get_sub_field('title2');
               $description = get_sub_field('description');
 
               ?>
 
-            <li class="">
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"
-                   title="<?php echo $image['title'] ?> "/>
-              <h2><?php echo $description; ?></h2>
+            <li class="content-block">
+              <h2><?php echo $title1; ?></h2>
+              <p class="value"><?php echo $value; ?></p>
+              <h2 class="title2"><?php echo $title2; ?></h2>
+              <p><?php echo $description; ?></p>
             </li>
           <?php endwhile; ?>
           <?php endif; ?>
       </ul>
-      <div>
-
       </div>
+    </div>
 </section>
