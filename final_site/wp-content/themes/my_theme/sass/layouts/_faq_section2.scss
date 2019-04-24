@@ -1,56 +1,76 @@
 .faq-section2 {
   max-width: 989px;
-  margin: 0 auto;
+  margin: 0 auto 249px auto;
 
-  .accordion {
-    background-color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
+  .accordion-container {
     border: none;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    color: #00a4e4;
-    font: 600 21px/28px $main-font;
-    letter-spacing: -0.42px;
-  }
 
-  .accordion:hover {
-    background-color: #f2f2f2;
-  }
+    .article-title {
+      text-align: left;
+      color: #00a4e4;
+      font-weight: 600;
+      font-size: 21px;
+      font-family: $main-font;
+      letter-spacing: -0.42px;
+      cursor: pointer;
+    }
+    .content-entry:hover,
+    .content-entry:active,
+    .content-entry.open {
+      background-color: #f2f2f2;
+    }
 
-  .active {
-    background-color: #f2f2f2;
-    display: block;
-  }
+    .content-entry:hover i:before,
+    .content-entry:hover i:active,
+    .content-entry.open i {
+      background: #f2f2f2;
+    }
+    .content-entry {
+      color: #0079c1;
+      padding: 17px;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      overflow: hidden;
+    }
+    .content-entry:last-of-type {
+      border-bottom: 1px solid #ccc;
+    }
+    i {
+      float: right;
+      font-size: 30px;
+      color: #00a4e4;
+    }
+    .content-entry i:after {
+      content: "+";
+    }
 
-  p {
-    padding: 0 18px;
-    display: none;
-    background-color: #f2f2f2;
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    overflow: hidden;
-    color: $color-text;
-    font: 400 19px/28px $main-font;
-    letter-spacing: -0.38px;
+    .content-entry.open i:after {
+      content: "-";
+    }
+    .accordion-content {
+      display: none;
+      padding-top: 16px;
+      background-color: #f2f2f2;
+      overflow: hidden;
+      color: $color-text;
+      font: 400 19px/28px $main-font;
+      letter-spacing: -0.38px;
+    }
   }
-
-  .accordion:after {
-    content: '+'; /* Unicode character for "plus" sign (+) */
-    font-size: 30px;
-    color: #00a4e4;
-    float: right;
-    margin-left: 5px;
-  }
-
-  .active:after {
-    content: "-"; /* Unicode character for "minus" sign (-) */
-  }
-
 }
+
+//
+//  .accordion-item h3:after {
+//    content: '+';
+//    font-size: 30px;
+//    color: #00a4e4;
+//    float: right;
+//    margin-left: 5px;
+//  }
+//
+//  .active:after {
+//    content: "-";
+//  }
+//}
 

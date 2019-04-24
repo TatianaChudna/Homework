@@ -21,15 +21,20 @@
                 ?>
 
             <li class="slide">
+
               <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"
                    title="<?php echo $image['title'] ?> "/>
+
               <div class="text-container">
+
                 <h2 class="section4-subtitle">
                     <?php echo get_sub_field('subtitle'); ?>
                 </h2>
+
                 <p class="section4-content">
                     <?php echo get_sub_field('description'); ?>
                 </p>
+
               </div>
             </li>
 
