@@ -1,0 +1,41 @@
+.section4 {
+  background: #d4e5e5;
+
+  .d-flex {
+    display: flex;
+    justify-content: start;
+
+    .image-wrapper {
+      margin-right: 43px;
+
+      img {
+        display: block;
+      }
+    }
+    .text-block {
+      color: $color-text;
+      padding-top: 26px;
+
+      h1 {
+        font-family: $secondary-font;
+        font-size: $font-size-lg;
+        font-weight: 300;
+        line-height: 42px;
+        letter-spacing: -0.76px;
+        margin-bottom: 24px;
+        max-width: 319px;
+      }
+      .first {
+        margin-bottom: 25px;
+      }
+      p {
+        max-width: 537px;
+        font-family: $secondary-font;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: -0.34px;
+      }
+    }
+  }
+}
