@@ -32,7 +32,7 @@
       </div>
 
       <div class="content-field">
-        <div id="questionnare">
+        <div id="questionnare" style="display: block">
           <div class="cart-img">
               <?php
 
@@ -47,7 +47,7 @@
               <?php the_sub_field('description1'); ?>
           </div>
         </div>
-        <div id="dashboard">
+        <div id="dashboard" style="display: none">
           <div class="cart-img">
             <?php
 
@@ -62,10 +62,10 @@
             ?>
           </div>
         </div>
-        <div class="cart-content">
+        <div class="cart-content" style="display: none">
             <?php the_sub_field('description2'); ?>
         </div>
-        <div id="reporting">
+        <div id="reporting" style="display: none">
           <div class="cart-img">
             <?php
 
@@ -80,11 +80,11 @@
             ?>
           </div>
         </div>
-        <div class="cart-content">
+        <div class="cart-content" style="display: none">
             <?php the_sub_field('description3'); ?>
         </div>
 
-        <div id="future">
+        <div id="future" style="display: none">
           <div class="cart-img">
             <?php
 
@@ -98,7 +98,7 @@
             ?>
           </div>
         </div>
-        <div class="cart-content">
+        <div class="cart-content" style="display: none">
             <?php the_sub_field('description4'); ?>
         </div>
       </div>
