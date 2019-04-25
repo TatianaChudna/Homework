@@ -22,12 +22,13 @@
               $value = get_sub_field('value');
               $title2 = get_sub_field('title2');
               $description = get_sub_field('description');
-
+              $value = get_sub_field('value');
               ?>
+
 
             <li class="content-block">
               <h2><?php echo $title1; ?></h2>
-              <p class="value counter"><?php echo $value; ?></p>
+              <p class="value" data-from="0" data-to="<?php echo $value; ?>"></p>
               <h2 class="title2"><?php echo $title2; ?></h2>
               <p><?php echo $description; ?></p>
             </li>

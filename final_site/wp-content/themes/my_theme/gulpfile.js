@@ -21,6 +21,7 @@ var gulp = require('gulp'),
 var LIB_JS_INCLUDE_PATHS = [
     './node_modules/jquery/dist/jquery.js',
     './node_modules/slick-carousel/slick/slick.min.js',
+    './node_modules/jquery-countto/jquery.countTo.js'
 ];
 
 var CUSTOM_JS_SOURCE = [

@@ -37,11 +37,15 @@ $(document).ready(function () {
         $('#' + screen_id).addClass('active')
     })
 
-    $('.carousel').slick();
+    $('.carousel').slick(
+        {
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+        }
+    );
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
+    $('.value').countTo();
+
 });
 
