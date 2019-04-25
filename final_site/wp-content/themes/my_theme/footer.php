@@ -19,14 +19,18 @@
 
         <div class="form-field">
           <h5>Join</h5>
-          <form action="#" method="get" class="first-form">
-            <input class="email" name="email" type="email" placeholder="Join our email list and get tips, learn about Webinars and more!">
-            <button class="button">Join us</button>
-          </form>
-          <form action="#" method="get" class="second-form">
-            <input type="checkbox" id="privacy" name="privacy">
-            <label for="privacy">By joining the email list you agree to the LifeLens <a id="color-blue" href="#">Privacy
-                Policy</a></label>
+          <form action="#" method="get" >
+
+            <div class="first-form">
+              <input class="email" name="email" type="email" placeholder="Join our email list and get tips, learn about Webinars and more!">
+              <button class="button">Join us</button>
+            </div>
+
+            <div class="second-form">
+              <input type="checkbox" id="privacy" name="privacy">
+              <label for="privacy">By joining the email list you agree to the LifeLens <a id="color-blue" href="#">Privacy
+                  Policy</a></label>
+            </div>
           </form>
 
           <div id="social-network">

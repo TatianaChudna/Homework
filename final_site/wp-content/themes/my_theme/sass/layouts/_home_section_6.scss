@@ -10,18 +10,23 @@
       font-weight: 300;
       line-height: 42px;
       letter-spacing: -0.76px;
+      padding-top: 15px;
+      padding-bottom: 38px;
     }
     p {
+      max-width: 771px;
       font-family: $main-font;
       font-size: $font-size-sm;
       font-weight: 400;
       line-height: 34px;
       letter-spacing: -0.38px;
+      margin: 0 auto;
     }
   }
 
   .d-flex {
     @include flex;
+    align-items: normal;
     button {
       width: 186px;
       height: auto;
@@ -36,6 +41,14 @@
       outline: none;
       border: 1px solid #f2f2f2;
     }
+    button.active {
+      background: #0d84e3;
+      color: $main-color-text;
+    }
+    button:hover {
+      color: #0d84e3;
+      transition: 0.5s;
+    }
     img {
       margin: 0 auto 26px;
       max-width: 100%;
@@ -49,7 +62,9 @@
       display: block;
     }
     .cart-content {
-      margin-bottom: 36px;
+      max-width: 70%;
+      margin: 0 auto 36px auto;
+
       h3 {
         color: $color-text;
         font-family: $main-font;
@@ -71,8 +86,7 @@
         line-height: 30px;
         letter-spacing: -0.32px;
         background: #f2f2f2;
-        padding-bottom: 15px;
-        padding-top: 28px;
+        padding: 28px 10px 15px 10px;
         text-align: center;
       }
     }
