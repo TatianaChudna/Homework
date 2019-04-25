@@ -1,0 +1,48 @@
+.home-section-5 {
+background: #3b9743;
+  h1 {
+    color: $color-text;
+    font-family: $secondary-font;
+    font-size: $font-size-lg;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: -0.76px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  .slide {
+    text-align: center;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      display: inline;
+      margin-bottom: 20px;
+    }
+    .img-7 {
+      width: 359px;
+      height: auto;
+    }
+    h2 {
+      color: #494949;
+      font-family: $main-font;
+      font-size: $font-size-sm;
+      font-weight: 400;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+      margin-bottom: 25px;
+    }
+    p {
+      color: $color-text;
+      font-family: $secondary-font;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: -0.36px;
+      max-width: 421px;
+      margin: 0 auto;
+    }
+  }
+}
+

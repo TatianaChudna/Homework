@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(function() {
-        var Accordion = function(el, multiple) {
+    $(function () {
+        var Accordion = function (el, multiple) {
             this.el = el || {};
             this.multiple = multiple || false;
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
             }, this.dropdown)
         }
 
-        Accordion.prototype.dropdown = function(e) {
+        Accordion.prototype.dropdown = function (e) {
             var $el = e.data.el;
             $this = $(this),
                 $next = $this.next();
@@ -22,10 +22,26 @@ $(document).ready(function() {
 
             if (!e.data.multiple) {
                 $el.find('.accordion-content').not($next).slideUp().parent().removeClass('open');
-            };
+            }
+            ;
         }
         var accordion = new Accordion($('.accordion-container'), false);
     });
 
-})(jQuery);
+    $(document).on('click', '.screen-button', function () {
+        var button = $(this);
+        var screen_id = button.data('content');
+        $('.screen-button.active').removeClass('active');
+        button.addClass('active');
+        $('.screen.active').removeClass('active');
+        $('#' + screen_id).addClass('active')
+    })
+
+    $('.carousel').slick();
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
 

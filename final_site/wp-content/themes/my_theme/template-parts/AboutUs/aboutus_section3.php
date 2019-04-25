@@ -27,7 +27,7 @@
 
             <li class="content-block">
               <h2><?php echo $title1; ?></h2>
-              <p class="value"><?php echo $value; ?></p>
+              <p class="value counter"><?php echo $value; ?></p>
               <h2 class="title2"><?php echo $title2; ?></h2>
               <p><?php echo $description; ?></p>
             </li>
